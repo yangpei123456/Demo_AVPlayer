@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hAN-8n-Gjc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--分享界面-->
+        <scene sceneID="7V6-YY-mbM">
+            <objects>
+                <viewController storyboardIdentifier="ShareStoryboard" id="hAN-8n-Gjc" customClass="ShareViewControl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YST-R1-Y28"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ed-1X-xiN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IBD-y8-LZR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xga-wu-yOh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分 享" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlq-cm-spU">
+                                        <rect key="frame" x="270" y="13" width="60" height="35"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="MLM-Ct-8VV"/>
+                                            <constraint firstAttribute="width" constant="60" id="U0v-yI-cJi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyo-us-Z5w">
+                                        <rect key="frame" x="15" y="15" width="50" height="31"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="8FA-xT-5UA"/>
+                                        </constraints>
+                                        <state key="normal" title="返回"/>
+                                        <connections>
+                                            <action selector="back:" destination="hAN-8n-Gjc" eventType="touchUpInside" id="4pL-Ue-DRX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fyo-us-Z5w" firstAttribute="leading" secondItem="xga-wu-yOh" secondAttribute="leading" constant="15" id="2Wo-QA-ETw"/>
+                                    <constraint firstItem="tlq-cm-spU" firstAttribute="centerX" secondItem="xga-wu-yOh" secondAttribute="centerX" id="2qF-s8-uIs"/>
+                                    <constraint firstItem="fyo-us-Z5w" firstAttribute="top" secondItem="xga-wu-yOh" secondAttribute="top" constant="15" id="6Oe-ds-vaA"/>
+                                    <constraint firstAttribute="bottom" secondItem="fyo-us-Z5w" secondAttribute="bottom" constant="14" id="Brl-QH-z3X"/>
+                                    <constraint firstItem="tlq-cm-spU" firstAttribute="centerY" secondItem="xga-wu-yOh" secondAttribute="centerY" id="U9j-d1-G0H"/>
+                                    <constraint firstAttribute="height" constant="60" id="XIO-UV-Agr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xga-wu-yOh" secondAttribute="trailing" id="cu0-dF-tDV"/>
+                            <constraint firstItem="xga-wu-yOh" firstAttribute="leading" secondItem="IBD-y8-LZR" secondAttribute="leading" id="rSV-ZL-bmU"/>
+                            <constraint firstItem="xga-wu-yOh" firstAttribute="top" secondItem="IBD-y8-LZR" secondAttribute="top" id="xEG-tE-US1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="分享界面" id="ZnY-Kf-HbL">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="9bF-AC-6y8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jGa-9e-8GO">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="返回"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcC-l3-e1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="388"/>
+        </scene>
+    </scenes>
+</document>
